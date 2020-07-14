@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projet6</title>
+
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Jeu de plateau - JavaScript</h1>
+    </header>
+    <div id="instructionbar">
+      <span id="instructions">Pour jouer, indiquez vos noms de joueurs</span
+      ><br />
+    </div>
+    <div id="main" class="container-fluid">
+      <div id="div-player1" class="player_tour">
+        <span id="title-player1">Player 1</span>
+        <p>
+          <img
+            src="assets/icons/player1.png"
+            alt="Player1"
+            title="player1"
+            width="100"
+          />
+        </p>
+        <hr />
+        <div id="divname-player1">
+          <p id="pname1">Nom joueur 1 :</p>
+          <input
+            type="text"
+            id="name1"
+            name="name1"
+            placeholder="Pseudo..."
+          /><button class="button" id="buttonname1">OK</button>
+        </div>
+        <span id="titlePlayer1"></span><br />
+        <span id="obstacle-player1"></span><br />
+        <span id="arme-player1" class="weapon_infos"></span><br />
+        <span id="forcearme-player1"></span><br />
+        <span id="vie-player1"></span><br />
+        <div id="barre-player1"></div>
+        <br />
+        <div id="choix-player1" class="row">
+          <div class="col-12">
+            <button
+              id="player1-attack"
+              data-player="1"
+              type="button"
+              class="btn btn-danger attaquer"
+            >
+              Attaquer
+            </button>
+          </div>
+          <div class="col-12"><hr /></div>
+          <div id="defense-player1" class="col-12">
+            <button
+              type="button"
+              class="btn btn-success defense"
+              data-player="1"
+            >
+              <img src="assets/icons/defense.png" width="15" />
+              Se defendre
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="div-player2" class="player_tour">
+        <span id="title-player2">Player 2</span>
+        <p>
+          <img
+            src="assets/icons/player2.png"
+            alt="Player2"
+            title="player2"
+            width="100"
+          />
+        </p>
+        <hr />
+        <div id="divname-player2">
+          <p id="pname2">Nom joueur 2 :</p>
+          <input
+            type="text"
+            id="name2"
+            name="name2"
+            placeholder="Pseudo..."
+          /><button class="btn btn-primary" id="buttonname2">OK</button>
+        </div>
+        <span id="titlePlayer2"></span><br />
+        <span id="obstacle-player2"></span><br />
+        <span id="arme-player2" class="weapon_infos"></span><br />
+        <span id="forcearme-player2"></span><br />
+        <span id="vie-player2"></span><br />
+        <div id="barre-player2"></div>
+        <br />
+        <div id="choix-player2" class="row">
+          <div class="col-12">
+            <button
+              id="player2-attack"
+              type="button"
+              class="btn btn-danger attaquer"
+              data-player="2"
+            >
+              Attaquer
+            </button>
+          </div>
+          <div class="col-12"><hr /></div>
+          <div id="defense-player2" class="col-12">
+            <button
+              type="button"
+              class="btn btn-success defense"
+              data-player="2"
+            >
+              <img src="assets/icons/defense.png" width="15" />
+              Se defendre
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="board"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!--<script type="module" src="assets/js/player.js"></script>-->
+    <script type="module" src="assets/object/app.js"></script>
+    <!--<script src="assets/js/pseudo.js"></script>-->
+  </body>
+</html>

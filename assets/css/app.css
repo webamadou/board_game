@@ -1,0 +1,127 @@
+#board {
+  /*width: 740px;
+  height: 715px;*/
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  align-content: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.box {
+  /*width: 66px;
+  height: 66px;*/
+  width: 33px;
+  height: 33px;
+  border: 1px solid black;
+}
+
+.wall {
+  background-color: grey;
+}
+
+.weapon1 {
+  background: url("../../assets/icons/1.png") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+.weapon2 {
+  background: url("../../assets/icons/2.png") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+.weapon3 {
+  background: url("../../assets/icons/3.png") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+.weapon4 {
+  background: url("../../assets/icons/4.png") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+.weapon0 {
+  background: url("../../assets/icons/0.png") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+.player1 {
+  background: url("../../assets/img/player1.png") no-repeat;
+  background-size: cover;
+}
+
+.player2 {
+  background: url("../../assets/img/player2.png") no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#instructionbar {
+  font-family: Arial, sans-serif;
+  color: #f44242;
+  font-size: 100%;
+  width: auto;
+  display: block;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  margin-bottom: 3vh;
+}
+
+#main {
+  text-align: center;
+  margin: auto;
+}
+
+#div-player1 {
+  font-family: Arial, sans-serif;
+  padding-top: 10px;
+  height: 610px;
+  width: 180px;
+  float: left;
+  border: 1px solid #bbb;
+}
+#div-player2 {
+  font-family: Arial, sans-serif;
+  padding-top: 10px;
+  height: 610px;
+  width: 180px;
+  float: right;
+  border: solid 1px #bbb;
+}
+.disable_tour {
+  opacity: 0.2;
+  pointer-events: none;
+}
+.weapon_infos img {
+  width: 30px;
+  background: transparent;
+}
+#choix-player1,
+#choix-player2 {
+  display: none;
+}
+#choix-player1.active,
+#choix-player2.active {
+  display: initial;
+}
